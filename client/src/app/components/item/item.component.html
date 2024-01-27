@@ -1,0 +1,4 @@
+@for (item of items | paginate: {itemsPerPage: 10, currentPage: page}; track $index) {
+<h1>{{item}}</h1>
+<pagination-controls (pageChange)="page = $event"></pagination-controls>
+}
